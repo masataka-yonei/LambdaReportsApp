@@ -1,0 +1,23 @@
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Amazon.Lambda.APIGatewayEvents;
+using Amazon.Lambda.Core;
+using GrapeCity.ActiveReports.Export.Pdf.Page;
+using GrapeCity.ActiveReports.Extensibility.Rendering.IO;
+using GrapeCity.ActiveReports.Rendering.IO;
+using GrapeCity.ActiveReports;
+using System.Xml;
+using System.Reflection;
+using static GrapeCity.Enterprise.Data.DataEngine.DataProcessing.DataProcessor;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+[assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
+
+namespace LambdaReportsApp.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class PdfExportController : ControllerBase
+    {
+    }
+}
