@@ -19,7 +19,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Fonts\ipag.ttf">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Invoice_bluegray.rdlx" />
   </ItemGroup>
